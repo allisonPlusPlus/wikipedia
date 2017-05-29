@@ -27,3 +27,23 @@ form {
   text-decoration: none;
   color:#B8B8B8;
 }
+
+.searchresult {
+  background-color: #606060;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+ul, li {
+  color: white;
+  list-style: none;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.article {
+  font-size: 20px;
+}
