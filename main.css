@@ -17,3 +17,8 @@ form {
 .random a {
   color: white;
 }
+
+.random a:hover {
+  text-decoration: none;
+  color:#B8B8B8;
+}
