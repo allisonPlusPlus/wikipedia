@@ -9,3 +9,11 @@ body {
 .content {
   margin-top: 400px;
 }
+
+form {
+  margin-bottom: 10px;
+
+}
+.random a {
+  color: white;
+}
