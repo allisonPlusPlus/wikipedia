@@ -13,8 +13,8 @@ $("#button").click(function() {
        console.log(response);
     },
 
-    error: function(response){
-      console.log(response);
+    error: function (request, status, error) {
+       console.log(request.responseText);
     }
 
 });
