@@ -7,16 +7,14 @@ $("#button").click(function() {
   searchTerm + "&format = json";
 
   $.ajax( {
-    type: "GET",
     url: proxy + url,
-    // async: false,
-    dataType: 'json',
-    success: function(data) {
-       console.log(data);
+
+    success: function(response) {
+       console.log(response);
     },
 
-    error: function(errorMessage){
-      console.log("error");
+    error: function(response){
+      console.log(response);
     }
 
 });
