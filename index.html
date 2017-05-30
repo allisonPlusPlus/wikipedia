@@ -18,7 +18,7 @@
     <script src="https://use.fontawesome.com/5251536e6a.js"></script>
 
     <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -32,34 +32,33 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-    <div class="content">
-        <form class="form-inline text-center">
-            <div class="form-group form-group-lg">
-                <input type="text" class="form-control" id="searchbar" placeholder="Search topic" aria-label="Input your search topic here">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="content">
+                    <form class="form-inline text-center">
+                        <div class="form-group form-group-lg">
+                            <input type="text" class="form-control" id="searchbar" placeholder="Search topic" aria-label="Input your search topic here">
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-default btn-primary"><i class="fa fa-search" aria-hidden="true" title="Click here to search"></i></button>
+                    </form>
+                </div>
             </div>
-            <button type="submit" class="btn btn-lg btn-default btn-primary"><i class="fa fa-search" aria-hidden="true" title="Click here to search"></i></button>
-        </form>
-      </div>
-    </div>
-      <div class="row">
-        <div class="col-lg-12">
-        <div class="random text-center">
-            <a href="https://en.wikipedia.org/wiki/Special:Random">Click here for a random article</a>
-
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="random text-center">
+                        <a href="https://en.wikipedia.org/wiki/Special:Random">Click here for a random article</a>
+                    </div>
+                </div>
+            </div>
+            <div class="searchresult hidden">
+                <ul>
+                    <li class="title">Search Result Title</li>
+                    <li class="article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales, arcu eget ultricies sollicitudin, risus turpis dapibus nulla, quis fermentum mauris urna eu velit.</li>
+                </ul>
+            </div>
         </div>
-      </div>
-      </div>
-        <div class="searchresult hidden">
-         <ul>
-        <li class="title">Search Result Title</li>
-        <li class="article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales, arcu eget ultricies sollicitudin, risus turpis dapibus nulla, quis fermentum mauris urna eu velit.</li>
-      </ul>
     </div>
-  </div>
-</div>
 </body>
 
 </html>
