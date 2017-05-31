@@ -10,7 +10,9 @@ $(document).ready(function() {
       url: proxy + url,
 
       success: function(data) {
-        $(".output").prepend("<li><a href="+data[3][0]+">"+data[1][0] +"</a><p>"+data[2][0]+"</p></li>");
+        for (var i=0; i < data[1].length; i ++) {
+        $(".output").prepend("<li><a href="+data[3][i]+">"+data[1][i] +"</a><p>"+data[2][i]+"</p></li>");
+      }
       },
 
 
