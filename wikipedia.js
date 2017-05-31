@@ -9,9 +9,13 @@ $(document).ready(function() {
     $.ajax({
       url: proxy + url,
 
-      success: function(response) {
-        console.log(response);
+      success: function(data) {
+        console.log(data[1][0]);
+        console.log(data[2][0]);
+        console.log(data[3][0]);
+        $(".title").append(data[1][0]);
       },
+
 
       error: function(request, status, error) {
         console.log(request.responseText);
