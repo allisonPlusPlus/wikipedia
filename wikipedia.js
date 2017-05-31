@@ -14,6 +14,7 @@ $(document).ready(function() {
         console.log(data[2][0]);
         console.log(data[3][0]);
         $(".title").append(data[1][0]);
+        $(".article").append(data[2][0]);
       },
 
 
