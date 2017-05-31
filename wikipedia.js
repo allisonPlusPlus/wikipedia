@@ -11,6 +11,8 @@ $(document).ready(function() {
 
       success: function(data) {
         $(".output").html("");
+        $("div.hidden").removeClass("hidden");
+
 
         for (var i=0; i < data[1].length; i ++) {
         $(".output").prepend("<li><a href="+data[3][i]+">"+data[1][i] +"</a><p>"+data[2][i]+"</p></li>");
