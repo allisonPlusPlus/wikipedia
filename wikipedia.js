@@ -10,10 +10,7 @@ $(document).ready(function() {
       url: proxy + url,
 
       success: function(data) {
-        console.log(data[1][0]);
-        console.log(data[2][0]);
-        console.log(data[3][0]);
-        $(".title").append(data[1][0]);
+        $("#output").prepend("<li><a href="+data[3][0]+">"+data[1][0] +"</a><p>"+data[2][0]+"</p></li>");
         $(".article").append(data[2][0]);
       },
 
