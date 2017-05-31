@@ -34,19 +34,27 @@ form {
   margin-top: 10px;
 }
 
-ul, li {
+.output {
   color: white;
+}
+
+.output ul,li {
   list-style: none;
-}
-
-.title {
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.article {
   font-size: 20px;
 }
+
+.output a {
+  font-weight: bold;
+  color: white;
+  font-size: 25px;
+}
+
+.output a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+
 
 .hidden {
   display: none;
