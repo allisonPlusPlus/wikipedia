@@ -16,13 +16,18 @@ $(document).ready(function() {
         $(".output").prepend("<li><a href="+data[3][i]+">"+data[1][i] +"</a><p>"+data[2][i]+"</p></li>");
       }
       $("#searchterm").val('');
-
       },
 
 
       error: function(request, status, error) {
         console.log(request.responseText);
         console.log(url);
+      }
+    });
+
+    $("#searchterm").keypress(function(e) {
+      if (e.which===13){
+        $("#form").submit();
       }
     });
   });
